@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Karan Sasthiri Kalailingam",
+    "age": 27,
+    "company": "Police",
+    "mobile": "9876349834"
+  },
+  {
+    "id": 2,
+    "name": "Kaleeswaran Ravichandran",
+    "age": 24,
+    "company": "Army",
+    "mobile": "9876349834"
+  },
+  {
+    "id": 3,
+    "name": "Maran Sowthri Kalailingam",
+    "age": 24,
+    "company": "Athena",
+    "mobile": "9876349834"
+  },
+  {
+    "id": 4,
+    "name": "Mahesh Kannan Ravichandran",
+    "age": 21,
+    "company": "Student",
+    "mobile": "9876349834"
+  }
+]
