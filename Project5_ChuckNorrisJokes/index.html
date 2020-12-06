@@ -9,19 +9,22 @@
       integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
       crossorigin="anonymous"
     />
-    <title>JS Async</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Chuck Norris Jokes</title>
   </head>
   <body>
     <div class="container">
-      <button id="get-customer-btn">Get Customer</button>
-      <button id="get-customers-btn">Get Customers</button>
-      <br /><br />
-      <div id="output-customer">
-        <h3>Customer</h3>
-      </div>
-      <div id="output-customers">
-        <h3>Customers</h3>
-      </div>
+      <h2>Chuck Norris Joke Generator</h2>
+      <form id="jokes-form">
+        <div>
+          <label for="count">Count</label>
+          <input type="number" id="count" />
+        </div>
+        <div>
+          <input type="submit" id="get-jokes" value="Get Jokes" />
+        </div>
+      </form>
+      <ul id="jokes-list"></ul>
     </div>
     <script src="app.js"></script>
   </body>
