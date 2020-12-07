@@ -3,9 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Easy HTTP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+      crossorigin="anonymous"
+    />
+    <title>EsayHTTP ES6</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div class="container">
+      <h3>Get Results in 3 formats</h3>
+      <button id="get-text">Get Text</button>
+      <button id="get-json">Get JSON</button>
+      <button id="get-external">Get External API</button>
+    </div>
+    <div id="output"></div>
+    <script src="easyhttp.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
