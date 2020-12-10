@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <title>RegExp Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h1>Signup</h1>
+          <form id="signup-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your name here"
+              />
+              <div class="invalid-feedback">Name length should be 2 - 10</div>
+            </div>
+            <div class="form-group">
+              <label for="zip">Zipcode</label>
+              <input
+                type="text"
+                class="form-control"
+                id="zip"
+                placeholder="Zipcode here"
+              />
+              <div class="invalid-feedback">Invalid zip code</div>
+            </div>
+            <div class="form-group">
+              <label for="mail">Mail</label>
+              <input
+                type="text"
+                class="form-control"
+                id="mail"
+                placeholder="Email here"
+              />
+              <div class="invalid-feedback">Invalid Email ID</div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="Phone here"
+              />
+              <div class="invalid-feedback">Invalid Phone Number</div>
+            </div>
+            <input
+              type="submit"
+              class="btn btn-primary btn-block"
+              value="Submit"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app_regexp.js"></script>
+  </body>
+</html>
