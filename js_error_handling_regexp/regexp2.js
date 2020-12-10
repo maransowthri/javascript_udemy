@@ -1,10 +1,10 @@
 let re;
 let str;
 
-// re = /hel{0,2}o/i;(
-// re = /hel{2,}o/i;
-// re = /([\d]x){3}/i;
-// str = "3x3x3x";
+re = /hel{0,2}o/i;
+re = /hel{2,}o/i;
+re = /([\d]x){3}/i;
+str = "3x3x3x";
 
 re = /\w+/; /** it will match for all albhanumeric letter(a-zA-Z), number(0-9) & underscore(_) */
 re = /\W+/; /** it will match for all except albhanumeric letter(a-zA-Z), number(0-9) & underscore(_) */

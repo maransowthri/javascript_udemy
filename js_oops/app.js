@@ -25,10 +25,10 @@ class Student extends Person {
   }
 }
 
-// person1 = new Person("kmaran", 21);
-// console.log(person1);
-// console.log(person1.greeting());
-// console.log(Person.className());
+person1 = new Person("kmaran", 21);
+console.log(person1);
+console.log(person1.greeting());
+console.log(Person.className());
 
 student1 = new Student("kmaran", 24, "IX");
 console.log(student1);
