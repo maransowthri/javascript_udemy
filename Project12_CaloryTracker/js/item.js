@@ -6,13 +6,9 @@ const ItemCtrl = (function () {
   };
 
   const data = {
-    items: [
-      //   { id: 0, name: "Steak Dinner", calories: 1200 },
-      //   { id: 1, name: "Breakfast", calories: 500 },
-      //   { id: 2, name: "Brunch", calories: 900 },
-    ],
-    currentData: null,
+    items: StoreCtrl.getItems(),
     totalCalories: 0,
+    currentItem: null,
   };
 
   return {
@@ -31,13 +27,35 @@ const ItemCtrl = (function () {
       data.items.push(newItem);
       return newItem;
     },
-
     getTotalCalories: function () {
       let total = 0;
       for (let item of data.items) {
         total += item.calories;
       }
       return total;
+    },
+    getItemById: function (id) {
+      return data.items.filter((item) => item.id === id)[0];
+    },
+    setCurrentItem: function (item) {
+      data.currentItem = item;
+    },
+    getCurrentItem: function () {
+      return data.currentItem;
+    },
+    updateItem: function (itemNew) {
+      data.items.map((item) => {
+        if (item.id === itemNew.id) {
+          item.name = itemNew.name;
+          item.calories = parseInt(itemNew.calories);
+        }
+      });
+    },
+    removeItem: function (id) {
+      data.items = data.items.filter((item) => item.id !== id);
+    },
+    removeAllItems: function () {
+      data.items = [];
     },
   };
 })();
