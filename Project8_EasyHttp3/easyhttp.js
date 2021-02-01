@@ -11,7 +11,7 @@ class EasyHTTP {
       headers: {
         "Content-Type": "application/json",
       },
-      data: JSON.stringify(data),
+      body: JSON.stringify(data),
     });
 
     const resData = await res.json();
@@ -24,14 +24,16 @@ class EasyHTTP {
       headers: {
         "Content-Type": "application/json",
       },
-      data: JSON.stringify(data),
+      body: JSON.stringify(data),
     });
     const resData = await res.json();
     return resData;
   }
 
   async delete(url) {
-    const res = await fetch(url);
+    const res = await fetch(url, {
+      method: "DELETE",
+    });
     const data = await res.json();
     return "USER DELETED";
   }

@@ -15,7 +15,7 @@ class EasyHTTP {
         headers: {
           "Content-Type": "application/json",
         },
-        data: JSON.stringify(data),
+        body: JSON.stringify(data),
       })
         .then((res) => res.json())
         .then((data) => resolve(data))
@@ -30,7 +30,7 @@ class EasyHTTP {
         headers: {
           "Content-Type": "application/json",
         },
-        data: JSON.stringify(data),
+        body: JSON.stringify(data),
       })
         .then((res) => res.json())
         .then((data) => resolve(data))
